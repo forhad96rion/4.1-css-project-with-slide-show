@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="shortcut icon" href="bd.jpg" type="image/x-icon">
+        <title>Css Layout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+     
+            
+			body{
+               margin:auto 5%; 
+            }
+            
+			ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: green;
+}
+			
+	
+			
+			
+            #wraffer{
+                background-color:green;
+                width:100%; 
+                height:auto; 
+            }
+            
+            #header_wraffer{
+                background-color:none;
+                width:100%;
+                height:100px; 
+            }
+            
+            
+            #banner{
+                background-color:White;
+                width:100%;
+                height: 120px;
+                float:left; 
+                
+  background-color: white;
+  padding-top: 30px;}
+  
+  #menu1{
+                background:white;
+				width:100%;
+                height:300px; 
+                margin-top:3px;
+				}
+           
+  #menu{
+                background:white;
+                width:100%;
+                height:100px; 
+                margin-top:3px;}
+              adding-top: 30px;
+       
+
+   #menu3{
+                background:green;
+                width:100%;
+                height:450px; 
+                margin-top:3px;}
+              	   
+				
+	
+   #menu4{
+                background:green;
+                width:100%;
+                height:450px; 
+                margin-top:3px;}
+              	   
+							
+				* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: green;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+			
+			
+			
+			
+			
+			
+					
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			#big_content_wraffer{
+			background-color:none;
+                width:100%;
+                height:800px; 
+			}
+			
+				
+				#right1_content{
+                background-color:rgb(174, 211, 134);
+                width:100%;
+                height:1750px; 
+                 float:left; 
+				 margin-left:0.3%;
+				 padding-top:9.5px;
+            }
+            
+			
+			
+            
+            #footer{
+                background:white;
+                width:100%;
+                height:1000px; 
+                 
+			
+			}
+        </style>
+    </head>
+    <body>
+        <div id="wraffer">
+            
+            
+            <div id="header_wraffer">
+                
+                <div id="banner"><style>
+p {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 17, 2020 0:0:0").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML =+days + "D|" + hours + "H|"
+  + minutes + "M|" + seconds + "S";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</div>
+            </div>
+            
+            </div>
+			</div>
+			
+            </div>
+            <hr>
+			<div id="menu1"><center><img src="mujib.jpg" width="75%" height="200"></center><hr><center><a href="https://mujib100.gov.bd/"target=_blank style="text-decoration: none"><p style="font-size:26px; color:black;"><br>100 Years of Bangabandhu Sheikh Mujibur Rahman</br> </p></a></center></div>
+			<div id="menu"><hr><center><b><p><font size="6">Department of Immigration & Passports </font></p></b></center></div>
+			
+			<div id="menu3">  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="download1.jpg" style="width:100%">
+  <div class="text">Bangladesh</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="download16.jpg" style="width:100%">
+  <div class="text">Bangladesh</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images22.jpg" style="width:100%">
+  <div class="text">Bangladesh</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+			
+			<div id="menu3"><ul>
+           
+           <li><a href="#Home">Home</a></li>
+           <li><a href="#About Us">About Us</a></li>
+           <li><a href="#Where To apply">Where To apply</a></li>
+           <li><a href="#Forms">Forms</a></li>
+           <li><a href="#Fee">Fee</a></li>
+           <li><a href="#Projects">Projects</a></li>
+           <li><a href="#Act/Rules">Act/Rules</a></li>
+		   <li><a href="#Gallery">Gallery</a></li>
+		   <li><a href="#ePassport">ePassport</a></li>
+		   <li><a href="#Services">Services</a></li>
+		   
+		   </ul>
+           </div>
+			
+			
+			
+			
+			
+			<div id="big_content_wraffer">
+			
+            <div id="right1_content"><center>
+			
+	<h2>Machine Readable Passport Application Form</h2> </center> <hr>
+  
+  <center><form><form> Name of RPO/Bangladesh Mission: <br><input type="text"name="FirstName" size="55"><br>
+  
+ <br>Application type:<br> <input type="radio" name="Application type " value="New" >New 
+         <input type="radio" name="Application type " value="Reissue ">Reissue <br> 
+  
+<br>Type of passport applied for:<br> <input type="radio" name=" Type of passport applied for" value="Ordinary" >Ordinary
+         <input type="radio" name="Application type " value="Officia">Officia 
+         <input type="radio" name="Application type " value="Diplomatic ">Diplomatic <br>
+  
+<br>Type of delivery :<br> <input type="radio" name="Type of delivery " value="Regular" >Regular
+         <input type="radio" name="Type of delivery" value="Express ">Express 
+         
+
+
+
+<hr> First Name:<br><input type="text"name="FirstName" size="55"><br>
+     Last Name:<br><input type="text" name="LastName" size="55"><br><hr>
+
+
+Father's Name:<br><input type="text" name="Father's Name" size="55"><br>
+Profession:<br><input type="text" name="Profession " ><br>
+Nationality :<br><input type="text" name="Nationality" ><br><hr>
+
+Mother's Name:<br><input type="text" name="Mother's Name" size="55"><br>
+Profession:<br><input type="text" name="Profession " ><br>
+Nationality :<br><input type="text" name="Nationality" ><br><hr>
+
+Marital Status:<br> <input type="radio" name="Marital Status" value="Unmarried " >Unmarried
+         <input type="radio" name="Marital Status" value="Married ">Married 
+          <input type="radio" name="Marital Status" value="Divorced">Divorced
+<hr>Profession:<br><input type="text" name="Profession" ><br><hr>		  
+
+Place of Birth<br>
+
+Country:<br><input type="text" name="Country"><br>
+District:<br><input type="text" name="District"><br><hr>
+
+Date of Birth<br>
+
+Day:<br><input type="text" name="Day"><br>
+Month:<br><input type="text" name="Month"><br>
+Year:<br><input type="text" name="Year"><br><hr>
+
+Gender:<br> <input type="radio" name="gender" value="Male"> Male
+         <input type="radio" name="gender" value="Female"> Female<hr>
+
+
+National Identification
+Number 
+:<br><input type="text" name="Mobile Number" size="55"><br>
+
+Birth Identification
+Number 
+:<br><input type="text" name="Mobile Number" size="55"><br><hr>
+
+Address :<br> <textarea rows="3" cols="57" name="address"></textarea><br><hr>
+
+Mobile Number:<br><input type="text" name="Mobile Number"><br>
+E-mail:<br><input type="text" name="E-mail"><br><hr>
+
+Emergency contact person’s details
+Name:<br><input type="text" name="Name" size="55"><br>
+Relationship with the applicant:<br><input type="text" name="Relationship with the applicant "size="55"><br>
+Address :<br><textarea rows="3" cols="57" name="address"></textarea><br>
+Mobile Number:<br><input type="text" name="Mobile Number"><br>
+E-mail:<br><input type="text" name="E-mail"><br><hr>
+
+          <input type="submit" value="submit"><p>	
+</center></form> </div>
+            </div>
+            
+              <div id="footer"><center><b><p><font size="4">Development By :Forhad Ibn Haque,ID#163-005-042</font></p><b></center></div>
+        </div>
+		
+    </body>
+</html>
